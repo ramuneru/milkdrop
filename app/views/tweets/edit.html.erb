@@ -1,0 +1,10 @@
+ <div class="contents row">
+    <%= form_tag("/tweets/#{@tweet.id}", method: :patch ) do %>
+      <h3>
+        Edit
+      </h3>
+
+      <textarea cols="30" name="text" placeholder="text" rows="10"><%= @tweet.text %></textarea>
+      <button type="submit"><i class="fas fa-pen-nib"></i>Edit</button>
+    <% end %>
+  </div>

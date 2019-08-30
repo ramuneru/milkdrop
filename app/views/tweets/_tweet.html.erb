@@ -1,0 +1,6 @@
+      <div class="tweet-box">
+        <%= simple_format(tweet.text) %>   <%# simple_formatによって改行が反映される %>
+      </div>
+      <div class="user-box">
+        <p><%= tweet.user.name %></p>
+      </div>

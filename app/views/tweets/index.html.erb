@@ -1,0 +1,36 @@
+  <div class="sns-icons">
+      <!--以下twitter-->
+      <a href="https://twitter.com/" target="_blank">
+        <span class="fa-stack faa-parent animated-hover">
+            <i class="fab fa-twitter twitter faa-wrench"></i>
+        </span>
+      </a>
+      <!--以下facebook-->
+      <a href="https://www.facebook.com/" target="_blank">
+        <span class="fa-stack faa-parent animated-hover">
+        <i class="fab fa-facebook-f facebook faa-vertical"></i>
+        </span>
+      </a>
+      <!--以下feedly-->
+      <a href="https://feedly.com/i/welcome" target="_blank">
+        <span class="fa-stack faa-parent animated-hover">
+        <i class="fab fa-get-pocket feedly faa-pulse"></i>
+        </span>
+      </a>
+      <!--以下pocket-->
+      <a href="#">
+        <span class="fa-stack faa-parent animated-hover" target="_blank">
+        <i class="fas fa-rss stack faa-tada"></i>
+        </span>
+      </a>
+  </div>
+  
+  <div class="contents row" >
+    <% @tweets.each do |tweet|%>
+
+     <%= render partial: "tweet", locals: { tweet: tweet } %>
+
+    <% end %>
+      
+    <%= paginate(@tweets) %>
+  </div>
