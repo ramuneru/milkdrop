@@ -6,11 +6,18 @@
  * http://ipafont.ipa.go.jp/（IPAフォントのURL）
  * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
  */
+// @font-face {
+//     font-family: 'ほのか明朝';
+//     src: url('font_1_honokamin.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
 @font-face {
-    font-family: 'ほのか明朝';
-    src: url('font_1_honokamin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Concert One', cursive;
+  src: url('ConcertOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Unica+One);
@@ -55,6 +62,12 @@ line-height: 1.57;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
+
+.cow { 
+    width: 36px;
+    height: 36px;
+  }
+
 
 .header {
     a {
@@ -347,6 +360,7 @@ div.contents.row {
         border-radius: 3px;
         li {
           border-bottom: 1px solid #ddd;
+          text-decoration: none;
           &:last-child {
             border-bottom: 0;
           }
